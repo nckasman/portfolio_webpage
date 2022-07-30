@@ -12,7 +12,7 @@ const Header = () => {
                             direction = {{base: 'column', md: 'row'}}
                             display = {{base: 'flex', md: 'flex'}}
                         >
-                            <Heading size = "4xl">
+                            <Heading size = "3xl">
                                 nicholas kasman
                             </Heading>
                             <Info />
