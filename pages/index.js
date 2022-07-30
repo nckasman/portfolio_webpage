@@ -34,12 +34,12 @@ const Page = () => {
 
                     <Show above = "md">
                         <HStack mt = "8%" display = {{md: "flex"}} justifyContent = "space-evenly">
-                            <motion.div whileHover = {{scale: 1.05}} whileTap = {{scale: 0.95}}>
+                            <motion.div whileHover = {{scale: 1.1}} whileTap = {{scale: 0.9}}>
                                 <NextLink href = "/about/#start" passHref>
                                     <Button as = {Link} variant = "custom" width = "xs" bg = {useColorModeValue(theme.colors.light_hover, theme.colors.dark_hover)}>about</Button>
                                 </NextLink>
                             </motion.div>
-                            <motion.div whileHover = {{scale: 1.05}} whileTap = {{scale: 0.95}}>
+                            <motion.div whileHover = {{scale: 1.1}} whileTap = {{scale: 0.9}}>
                                 <NextLink href = "/projects/#start" passHref>
                                     <Button as = {Link} variant = "custom" width = "xs" bg = {useColorModeValue(theme.colors.light_hover, theme.colors.dark_hover)}>projects</Button>
                                 </NextLink>
