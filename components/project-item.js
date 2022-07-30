@@ -27,6 +27,8 @@ export const ProjectItem = ({ children, title, src, href }) => (
                 src = {src}
                 alt = {title}
                 className = "grid-item-thumbnail"
+                loading = "lazy"
+                placeholder = "blur"
                 />
                 <NextLink href = {href} passHref>
                     <LinkOverlay target = "_blank" rel = "noopener noreferrer">
