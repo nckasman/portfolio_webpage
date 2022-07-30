@@ -87,7 +87,6 @@ const components = {
 
 const config = {
     initialColorMode: 'light',
-    useSystemColorMode: true,
 }
 
 const theme = extendTheme({
