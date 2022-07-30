@@ -4,7 +4,7 @@ import theme from "../styles/theme"
 import NextLink from "next/link"
 import { motion } from "framer-motion"
 
-export const ProjectItem = ({ children, title, src, href }) => (
+export const ProjectItem = ({ children, title, src, href, blurURL }) => (
     <motion.div whileHover = {{scale: 1.1}} whileTap = {{scale: 0.9}}>
         <Box 
         pb = {5}
@@ -29,6 +29,7 @@ export const ProjectItem = ({ children, title, src, href }) => (
                 className = "grid-item-thumbnail"
                 loading = "lazy"
                 placeholder = "blur"
+                blurDataURL = {blurURL}
                 />
                 <NextLink href = {href} passHref>
                     <LinkOverlay target = "_blank" rel = "noopener noreferrer">

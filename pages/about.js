@@ -52,7 +52,7 @@ const About = () => {
                     </Text>
 
                     <HStack mt = {5}>
-                        <motion.div whileHover = {{scale: 1.05}} whileTap = {{scale: 0.95}}><NextLink href = "/projects" passHref><Link as = {Text}>Click here</Link></NextLink></motion.div> 
+                        <motion.div whileHover = {{scale: 1.05}} whileTap = {{scale: 0.95}}><NextLink href = "/projects" passHref><Link as = {Text} fontWeight = "bold">Click here</Link></NextLink></motion.div> 
                         <Text>to view my portfolio!</Text>
                     </HStack>
 

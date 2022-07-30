@@ -5,7 +5,7 @@ import { ImHeart } from "react-icons/im"
 const Footer = () => {
     return(
         <Layout>
-            <Container>
+            <Container mt = "8%">
                 <HStack flexGrow = {1}>
                     <Text fontSize = {12}>made with</Text>
                     <Icon as = {ImHeart} color = "#ee3255"/>

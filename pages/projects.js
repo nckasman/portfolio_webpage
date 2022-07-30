@@ -10,7 +10,8 @@ import { MdViewAgenda } from "react-icons/md"
 import { IoGrid } from "react-icons/io5"
 import { ProjectItem } from "../components/project-item"
 // Thumbnails
-import bloomGif from "../public/images/bloom.png"
+import bloomGIF from "../public/images/bloom.gif"
+import bloomPNG from "../public/images/bloom.png"
 import fishtypeThumb from "../public/images/fishtype.png"
 import fingertureThumb from "../public/images/fingerture.png"
 
@@ -46,19 +47,19 @@ const Projects = () => {
                 <motion.div layout transition = {{type: "spring", stiffness: 700, damping: 30}}>
                     <SimpleGrid columns = {grid} gap = {10} mt = {10}>
                         <Box>
-                            <ProjectItem id = "bloom" title = "bloom." src = {bloomGif} href = "https://devpost.com/software/bloom-7dbekm">
+                            <ProjectItem id = "bloom" title = "bloom." src = {bloomGIF} blurURL = {bloomPNG} href = "https://devpost.com/software/bloom-7dbekm">
                                 An e-learning solution that provides teachers with 
                                 real-time sentiment analysis of their online classrooms
                             </ProjectItem>
                         </Box>
                         <Box>
-                            <ProjectItem id = "fishtype" title = "fishtype" src = {fishtypeThumb} href = "https://devpost.com/software/fishtype">
+                            <ProjectItem id = "fishtype" title = "fishtype" src = {fishtypeThumb} blurURL = {fishtypeThumb} href = "https://devpost.com/software/fishtype">
                                 A keystroke dynamics project for more secure authentication
                                 in security systems
                             </ProjectItem>
                         </Box>
                         <Box>
-                            <ProjectItem id = "fingerture" title = "fingerture" src = {fingertureThumb} href = "https://devpost.com/software/fingerture">
+                            <ProjectItem id = "fingerture" title = "fingerture" src = {fingertureThumb} blurURL = {fingertureThumb} href = "https://devpost.com/software/fingerture">
                                 A web app for automatically generating optimal fingerings
                                 to play piano music sheets
                             </ProjectItem>
