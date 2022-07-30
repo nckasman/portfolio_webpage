@@ -10,7 +10,7 @@ import { MdViewAgenda } from "react-icons/md"
 import { IoGrid } from "react-icons/io5"
 import { ProjectItem } from "../components/project-item"
 // Thumbnails
-import bloomGif from "../public/images/bloom.gif"
+import bloomGif from "../public/images/bloom.png"
 import fishtypeThumb from "../public/images/fishtype.png"
 import fingertureThumb from "../public/images/fingerture.png"
 
@@ -44,7 +44,7 @@ const Projects = () => {
                 </Show>
                 
                 <motion.div layout transition = {{type: "spring", stiffness: 700, damping: 30}}>
-                    <SimpleGrid columns = {grid} gap = {10} mt = {5}>
+                    <SimpleGrid columns = {grid} gap = {10} mt = {10}>
                         <Box>
                             <ProjectItem id = "bloom" title = "bloom." src = {bloomGif} href = "https://devpost.com/software/bloom-7dbekm">
                                 An e-learning solution that provides teachers with 

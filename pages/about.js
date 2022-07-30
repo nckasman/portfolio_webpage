@@ -1,8 +1,9 @@
-import { Container, Heading, Box, Text, Image, Badge, IconButton, Link } from "@chakra-ui/react"
+import { Container, Heading, Box, Text, Image, Badge, IconButton, Link, HStack } from "@chakra-ui/react"
 import Section from "../components/section"
 import Layout from "../components/layouts/article"
 import { TriangleUpIcon } from "@chakra-ui/icons"
 import NextLink from "next/link"
+import { motion } from "framer-motion"
 
 const About = () => {
     return (
@@ -49,6 +50,11 @@ const About = () => {
                         Some of my hobbies include lifting weights, chugging doubleshot coffees at hackathons,
                         and building cool software engineering and data science projects
                     </Text>
+
+                    <HStack mt = {5}>
+                        <motion.div whileHover = {{scale: 1.05}} whileTap = {{scale: 0.95}}><NextLink href = "/projects" passHref><Link as = {Text}>Click here</Link></NextLink></motion.div> 
+                        <Text>to view my portfolio!</Text>
+                    </HStack>
 
                     <Box align = "right" mt = "10%">
                         <NextLink href = "#top" passHref>

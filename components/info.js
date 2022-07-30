@@ -3,6 +3,7 @@ import { InfoIcon } from "@chakra-ui/icons"
 import React from "react"
 import theme from "../styles/theme"
 import { motion } from "framer-motion"
+import NextLink from "next/link"
 
 const Info = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -24,11 +25,13 @@ const Info = () => {
                     >
                         <Text pb = "1%">this website was made with <b><i>next.js</i></b>, <b><i>chakra-ui</i></b>, <b><i>framer-motion</i></b>, & <i><b>bun</b></i></Text>
                         <motion.div whileHover = {{scale: 1.1}} whileTap = {{scale: 0.9}}>
-                            <Link target = "_blank" rel = "noopener noreferrer" href = "https://github.com/nckasman">
-                                <Button variant = 'custom' fontSize = "sm" height = {7} p = {3}>
-                                    view source code
-                                </Button>
-                            </Link>
+                            <NextLink href = "https://github.com/nckasman/portfolio_webpage" passHref>
+                                <Link target = "_blank" rel = "noopener noreferrer">
+                                    <Button variant = 'custom' fontSize = "sm" height = {7} p = {3}>
+                                        view source code
+                                    </Button>
+                                </Link>
+                            </NextLink>
                         </motion.div>
                     </Box>
                 </DrawerContent>
