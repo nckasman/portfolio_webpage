@@ -13,7 +13,7 @@ const About = () => {
                         About
                     </Heading>
                     <Text>
-                        Hi! I'm an electrical engineering student, biostatistics researcher,
+                        Hi! I&apos;m an electrical engineering student, biostatistics researcher,
                         and software engineer attending <Badge variant = "am">Texas A&M University</Badge>
                     </Text>
 

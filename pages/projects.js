@@ -3,7 +3,7 @@ import { Container, Heading, SimpleGrid, Box, IconButton, Link, HStack, Show } f
 import Layout from "../components/layouts/article"
 import NextLink from "next/link"
 import React, { useState } from 'react'
-import { AnimatePresence, motion } from "framer-motion"
+import { motion } from "framer-motion"
 // Icons
 import { TriangleUpIcon } from "@chakra-ui/icons"
 import { MdViewAgenda } from "react-icons/md"

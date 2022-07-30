@@ -1,4 +1,4 @@
-import { Drawer, DrawerOverlay, DrawerContent, Button, Box, useDisclosure, useColorModeValue, Link, Text, DrawerCloseButton } from "@chakra-ui/react"
+import { Drawer, DrawerOverlay, DrawerContent, Button, Box, useDisclosure, useColorModeValue, Link, Text } from "@chakra-ui/react"
 import { InfoIcon } from "@chakra-ui/icons"
 import React from "react"
 import theme from "../styles/theme"

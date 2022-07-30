@@ -16,8 +16,8 @@ import DropdownMenu from "./dropdown-menu"
 import theme from "../styles/theme"
 import { motion } from "framer-motion"
 
-const LinkItem = ({ href, path, children }) => {
-    const active = path === href
+const LinkItem = ({ href, children }) => {
+    // const active = path === href (add path to object props when you use this)
 
     return (
         <NextLink href = {href} passHref>
