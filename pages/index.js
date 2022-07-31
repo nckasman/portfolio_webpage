@@ -9,7 +9,7 @@ import Section from "../components/section"
 const Page = () => {
     return (
         <Layout>
-            <Container mt = "4%" display = {{md: "block"}}>
+            <Container mt = {{base: "10%", md: "4%"}} display = {{md: "block"}}>
                 <Section delay = {0.1}>
                     <Box>
                         <Socials />

@@ -33,6 +33,17 @@ const DropdownMenu = () => {
                 transitionDuration: "180ms"
             }}
             >
+                <NextLink href = "/" passHref>
+                    <MenuItem
+                    as = {Link}
+                    _hover = {{
+                        bg: useColorModeValue(theme.colors.light_hover, theme.colors.dark_hover)
+                    }}
+                    >
+                    home
+                    </MenuItem>
+                </NextLink>
+
                 <NextLink href = "/about/#start" passHref>
                     <MenuItem
                     as = {Link}
