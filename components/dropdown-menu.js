@@ -36,6 +36,7 @@ const DropdownMenu = () => {
                 <NextLink href = "/" passHref>
                     <MenuItem
                     as = {Link}
+                    _focus = "none"
                     _hover = {{
                         bg: useColorModeValue(theme.colors.light_hover, theme.colors.dark_hover)
                     }}
@@ -47,7 +48,6 @@ const DropdownMenu = () => {
                 <NextLink href = "/about/#start" passHref>
                     <MenuItem
                     as = {Link}
-                    _focus = "none"
                     _hover = {{
                         bg: useColorModeValue(theme.colors.light_hover, theme.colors.dark_hover)
                     }}
