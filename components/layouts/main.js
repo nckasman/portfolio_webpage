@@ -3,6 +3,7 @@ import Navbar from '../navbar.js'
 import { Box, Container } from "@chakra-ui/react"
 import Header from "../header"
 import Footer from "../footer"
+import { Analytics } from '@vercel/analytics/react';
 
 const Main = ({ children, router }) => {
     return (
@@ -18,6 +19,7 @@ const Main = ({ children, router }) => {
                 <Header />
                 {children}
                 <Footer />
+                <Analytics />
             </Container>
         </Box>
     )
