@@ -14,6 +14,7 @@ import bloomGIF from "../public/images/bloom.gif"
 import bloomPNG from "../public/images/bloom.png"
 import fishtypeThumb from "../public/images/fishtype.png"
 import fingertureThumb from "../public/images/fingerture.png"
+import graphiteThumb from "../public/images/graphite.png"
 
 const Projects = () => {
     const [grid, setGrid] = useState([1,1,2])
@@ -46,6 +47,12 @@ const Projects = () => {
                 
                 <motion.div layout transition = {{type: "spring", stiffness: 700, damping: 30}}>
                     <SimpleGrid columns = {grid} gap = {10} mt = {10}>
+                        <Box>
+                            <ProjectItem id = "graphite" title = "graphite" src = {graphiteThumb} blurURL = {graphiteThumb} href = "https://devpost.com/software/graphite-6s3evo">
+                            Feature-rich note-taking tool with Markdown/LaTeX support, 
+                            AI-driven learning resource suggestions, live cloud sync, & more!
+                            </ProjectItem>
+                        </Box>
                         <Box>
                             <ProjectItem id = "bloom" title = "bloom." src = {bloomGIF} blurURL = {bloomPNG} href = "https://devpost.com/software/bloom-7dbekm">
                                 An e-learning solution that provides teachers with 

@@ -38,10 +38,14 @@ const About = () => {
                                 <Text fontSize = {18} display = "inline" fontWeight = "bold">Degree: </Text>
                                 B.S. Electrical Engineering
                             </Box>
+                            <Box mt = {2}>
+                                <Text fontSize = {18} display = "inline" fontWeight = "bold">Minors: </Text>
+                                Computer Science, Mathematics
+                            </Box>
                             <Box>
                                 <Text fontSize = {18} display = "inline" fontWeight = "bold">Relevant Coursework: </Text>
-                                Honors Engineering Computation, Intro to Program Design & Concepts,
-                                Calculus I, Calculus II
+                                Data Structures & Algorithms, Discrete Structures for Computing,
+                                Object-Oriented Programming, Programming Languages, Computer Organization & Design
                             </Box>
                         </Box>
                     </Box>
